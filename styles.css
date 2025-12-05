@@ -1,17 +1,36 @@
 body {
     font-family: "Arial", sans-serif;
-    background: #ffe6f2;
     margin: 0;
     padding: 0;
     color: #333;
+    overflow-x: hidden;
+}
+
+/* Fondo animado */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #ff9ec4, #ff66b3, #ffb3d9, #ffcce6);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
 }
 
 /* ENCABEZADO */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 50px 20px;
     color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 
 .highlight {
@@ -27,34 +46,44 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: #ffb3d9;
+    background: #ff66b3aa;
     padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    transition: transform 0.2s;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* CARDS */
 .card {
-    background: white;
+    background: rgba(255,255,255,0.9);
     margin: 25px auto;
     padding: 25px;
-    width: 85%;
+    width: 90%;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
+    box-shadow: 0 8px 30px rgba(255,105,180,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255,105,180,0.5);
 }
 
 .icon-row img {
     margin: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .icon-row img:hover {
@@ -101,7 +130,15 @@ header {
 footer {
     text-align: center;
     padding: 20px;
-    background: #ff99cc;
-    margin-top: 40px;
+    background: #ff99ccaa;
     color: white;
+    margin-top: 40px;
+}
+
+/* CANVAS SNAKE */
+#snake-canvas {
+    display: block;
+    margin: 15px auto;
+    background: #ffe6f2;
+    border-radius: 15px;
 }
