@@ -5,7 +5,7 @@
 
 ###
 
-<h2 align="left">About me</h2>
+<h2 align="left">Sobre mi</h2>
 
 ###
 
@@ -21,7 +21,7 @@
 
 ###
 
-<h2 align="left">My favourite programming languages and libraries </h2>
+<h2 align="left">Mis librerías y programas favoritos </h2>
 
 ###
 
@@ -35,7 +35,7 @@
   
 
 ###
-<h2 align="left">My favourite plattforms are</h2>
+<h2 align="left">MIs plataformas más usadas</h2>
 
 ###
 
