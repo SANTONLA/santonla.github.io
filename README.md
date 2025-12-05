@@ -1,5 +1,3 @@
-# README2
-
 <h1 align="left"👋 ¡Hola! Soy @SANTONLAR.</h1>
 
 ###
