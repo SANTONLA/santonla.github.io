@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@SANTONLA</title>
-  <h1 align="left">👋 ¡Hola! Soy @SANTONLA.</h1>
+     <h1 align="left">👋 ¡Hola! Soy @SANTONLA.</h1>
 
 <h2 align="left">Sobre mí</h2>
 
