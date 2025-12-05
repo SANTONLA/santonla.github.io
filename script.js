@@ -18,14 +18,13 @@ const canvas = document.getElementById("snake-canvas");
 const ctx = canvas.getContext("2d");
 
 const grid = 20;
-canvas.width = 400;  // Ajusta tamaño para que cuadre con la grilla
+canvas.width = 400;
 canvas.height = 400;
 
 let snake = [{x:10, y:10}];
 let dir = {x:1, y:0};
 let food = {x:15, y:15};
 
-// Función principal de la animación
 function gameLoop() {
     // Mover la serpiente
     let head = {...snake[0]};
@@ -67,7 +66,7 @@ document.addEventListener("keydown", e => {
     if(e.key === "ArrowRight" && dir.x === 0) dir = {x:1, y:0};
 });
 
-// Ejecutar la animación cada 100ms (10 frames por segundo)
+// Ejecutar la animación cada 100ms
 setInterval(gameLoop, 100);
 
 // Carrusel de proyectos
@@ -84,4 +83,5 @@ document.querySelector(".next").addEventListener("click", () => {
     carouselIndex = (carouselIndex + 1) % totalItems;
     container.style.transform = `translateX(-${carouselIndex * 100}%)`;
 });
+
 
