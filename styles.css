@@ -83,9 +83,21 @@ header {
 }
 .card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(255,105,180,0.5); }
 
-/* Icon row */
-.icon-row img { margin: 10px; transition: transform 0.3s; }
-.icon-row img:hover { transform: scale(1.2); }
+/* Icon row (actualizado para <i> de Devicon) */
+.icon-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.icon-row i {
+    font-size: 50px;
+    transition: transform 0.3s;
+    cursor: default;
+}
+.icon-row i:hover {
+    transform: scale(1.2);
+}
 
 /* Badge row */
 .badge-row a { margin-right: 10px; }
