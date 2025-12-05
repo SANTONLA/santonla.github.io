@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@SANTONLA - Portfolio</title>
+    <title>@SANTONLA - Portfolio Profesional</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -17,19 +17,20 @@
 </header>
 
 <nav class="nav">
-    <a href="index.html">Inicio</a>
+    <a href="#inicio">Inicio</a>
     <a href="https://santonla.github.io/Mis-modelos-de-ML/" target="_blank">Modelos ML</a>
+    <a href="#proyectos">Proyectos</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
-<section class="card fade-in">
+<section id="sobre-mi" class="card fade-in">
     <h2>Sobre mí</h2>
     <p>🔍 Me interesa SQL, Matlab, R Studio, Python y Github. Además, me encanta el aprendizaje automático 😊 y el desarrollo web con HTML, CSS y JavaScript.</p>
     <p>🌱 Actualmente estoy mejorando Python 🐍 y disfruto del análisis y visualización de datos con Tableau y Power BI 📊.</p>
     <p>💞️ Busco colaborar en proyectos con R y Python. Me gusta compartir conocimientos y ayudar a otros a crecer 👩‍💻.</p>
 </section>
 
-<section class="card fade-in">
+<section id="herramientas" class="card fade-in">
     <h2>Mis librerías y programas favoritos</h2>
     <div class="icon-row">
         <img src="https://github.com/SANTONLA/devicon/blob/master/icons/r/r-original.svg" height="50">
@@ -38,7 +39,7 @@
     </div>
 </section>
 
-<section class="card fade-in">
+<section id="plataformas" class="card fade-in">
     <h2>Mis plataformas más usadas</h2>
     <div class="icon-row">
         <img src="https://github.com/SANTONLA/devicon/blob/master/icons/github/github-original.svg" height="50">
@@ -47,10 +48,27 @@
     </div>
 </section>
 
-<section class="card fade-in">
-    <h2>Mis proyectos de Machine Learning</h2>
-    <p>🔥 Echa un vistazo a los modelos de ML que he creado:</p>
-    <a href="https://santonla.github.io/Mis-modelos-de-ML/" target="_blank" class="btn-ml">Ver Modelos ML</a>
+<section id="proyectos" class="card fade-in">
+    <h2>Mis proyectos destacados</h2>
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <h3>Proyecto 1: Clasificación con Python</h3>
+                <p>Random Forest aplicado a dataset de ejemplo.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Proyecto 2: Regresión Lineal</h3>
+                <p>Regresión polinómica y lineal en Python.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Proyecto 3: Series temporales</h3>
+                <p>Modelo ARIMA para predicción de datos.</p>
+            </div>
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+    <a href="https://santonla.github.io/Mis-modelos-de-ML/" target="_blank" class="btn-ml">Ver todos mis Modelos ML</a>
 </section>
 
 <section class="card fade-in">
@@ -71,6 +89,10 @@
 <footer>
     <p>Hecho con 💖 por @SANTONLA</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
