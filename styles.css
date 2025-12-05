@@ -65,6 +65,24 @@ header {
     margin-right: 10px;
 }
 
+/* BOTÓN MODELOS ML */
+.btn-ml {
+    display: inline-block;
+    background: #ff66b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-ml:hover {
+    transform: scale(1.1);
+    background: #ff3399;
+}
+
 /* ANIMACIONES */
 .fade-in {
     opacity: 0;
